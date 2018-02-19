@@ -25,10 +25,7 @@
         :   public fixture_class_name                                   \
     {                                                                   \
     public:                                                             \
-        BENCHMARK_CLASS_NAME_(fixture_name, benchmark_name)()           \
-        {                                                               \
-                                                                        \
-        }                                                               \
+        BENCHMARK_CLASS_NAME_(fixture_name, benchmark_name)() = default;\
     protected:                                                          \
         virtual void TestBody();                                        \
     private:                                                            \
